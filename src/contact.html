@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me</title>
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <header>
       <h1>Lamesgin</h1>
 
       <!-- This button is used to add an icon in mobile mode to drag options and make it responsive. -->
-      <button>
-        <span></span>
-      </button>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
 
-      <nav>
+      <nav class="menues display-none">
         <div>
           <a href="home.html">Home</a>
           <a href="about.html">About</a>
@@ -25,7 +28,6 @@
         <a href="contact.html" class="hire-me">Hire Me</a>
       </nav>
     </header>
-
     <!-- Contact Start -->
     <section>
       <div>
@@ -82,29 +84,8 @@
     <!-- Contact End -->
 
     <!-- Footer Start -->
-    <footer>
-      <div>
-        <div>
-          <div class="d-flex justify-content-center mb-4">
-            <!-- show social media icons -->
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-          </div>
-          <div>
-            <a href="#">Privacy</a>
-            <span>|</span>
-            <a href="#">Terms</a>
-            <span>|</span>
-            <a href="#">FAQs</a>
-            <span>|</span>
-            <a href="#">Help</a>
-          </div>
-        </div>
-      </div>
-    </footer>
 
     <!-- Footer End -->
+    <script src="./javascript/dom.js"></script>
   </body>
 </html>

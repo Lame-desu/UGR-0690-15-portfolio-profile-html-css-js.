@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <header>
       <h1>Lamesgin</h1>
 
       <!-- This button is used to add an icon in mobile mode to drag options and make it responsive. -->
-      <button>
-        <span></span>
-      </button>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
 
-      <nav>
+      <nav class="menues display-none">
         <div>
           <a href="home.html">Home</a>
           <a href="about.html">About</a>
@@ -27,17 +30,18 @@
     </header>
 
     <!-- About Start -->
-    <section>
+    <section class="about-section">
       <div>
-        <div>
-          <h2>About Me</h2>
+        <div class="about-text">
+          <h2 class="about-text-absolute">About Me</h2>
+          <h2 class="background-text">About</h2>
         </div>
         <div>
-          <div>
-            <img src="images/about.jpg" alt="" />
+          <div class="about-picture">
+            <img src="images/about.jpg" width="315" alt="" />
           </div>
-          <div>
-            <h3>UI/UX Designer & Web Developer</h3>
+          <div class="about-description">
+            <h3 class="about-title">UI/UX Designer & Web Developer</h3>
             <div>
               <details>
                 <summary>
@@ -58,12 +62,14 @@
                     where I achieved a high score that allowed me to pursue my
                     studies at Addis Ababa University.
                   </p>
+                  <br />
                   <p>
                     In addition to my technical skills, I enjoy listening to
                     music, attending church, and spending quality time with
                     friends. My interests lie in Web3 and blockchain technology,
                     and I am eager to explore these fields further.
                   </p>
+                  <br />
                   <p>
                     I firmly believe in the proverb, "Chase two rabbits, and you
                     will catch neither." This philosophy guides my approach to
@@ -71,6 +77,7 @@
                     distractions to deepen my understanding and mastery of each
                     subject.
                   </p>
+                  <br />
                   <p>
                     As I look to the future, I am excited about the
                     possibilities within Web3 development and blockchain
@@ -80,36 +87,39 @@
                 </div>
               </details>
             </div>
-            <div>
+            <div class="about-lists">
               <div>
-                <h6>Name: <span>Lamesgin Desalegn</span></h6>
+                <h6>Name: <span class="about-lighter">Lamesgin Desalegn</span></h6>
               </div>
               <div>
-                <h6>Birthday: <span>25 April 2004</span></h6>
+                <h6>Birthday: <span class="about-lighter">25 April 2004</span></h6>
               </div>
               <div>
-                <h6>Degree: <span>no Degree</span></h6>
+                <h6>Degree: <span class="about-lighter"no Degree</span></h6>
               </div>
               <div>
-                <h6>Experience: <span>no experience</span></h6>
+                <h6>Experience: <span class="about-lighter">no experience</span></h6>
               </div>
               <div>
-                <h6>Phone: <span>+251914432755</span></h6>
+                <h6>Phone: <span class="about-lighter">+251914432755</span></h6>
               </div>
               <div>
-                <h6>Email: <span>lamesgindesalegn30@gmail.com</span></h6>
+                <h6>Email: <span class="about-lighter">lamesgindesalegn30@gmail.com</span></h6>
               </div>
               <div>
-                <h6>Address:<span>Addis Ababa</span></h6>
+                <h6>Address:  <span class="about-lighter">Addis Ababa</span></h6>
               </div>
               <div>
-                <h6>Freelance: <span>Available</span></h6>
+                <h6>Freelance: <span class="about-lighter">Available</span></h6>
               </div>
             </div>
-            <a href="#contact">Hire Me</a>
-            <a href="./files/LamesginDesalegnResume.pdf" download="My_CV.pdf">
-              Learn more
-            </a>
+            <div class="about-btns">
+              <a class="about-btn" href="#contact">Hire Me</a>
+              <a class="about-btn" href="./files/LamesginDesalegnResume.pdf" download="My_CV.pdf">
+                Learn more
+              </a>
+
+            </div>
           </div>
         </div>
       </div>
@@ -117,29 +127,8 @@
     <!-- About End -->
 
     <!-- Footer Start -->
-    <footer>
-      <div>
-        <div>
-          <div class="d-flex justify-content-center mb-4">
-            <!-- show social media icons -->
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-          </div>
-          <div>
-            <a href="#">Privacy</a>
-            <span>|</span>
-            <a href="#">Terms</a>
-            <span>|</span>
-            <a href="#">FAQs</a>
-            <span>|</span>
-            <a href="#">Help</a>
-          </div>
-        </div>
-      </div>
-    </footer>
 
     <!-- Footer End -->
+    <script src="./javascript/dom.js"></script>
   </body>
 </html>

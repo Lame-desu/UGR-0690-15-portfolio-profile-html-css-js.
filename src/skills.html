@@ -1,21 +1,23 @@
-!
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My skills</title>
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
-  <body>
+  <body style="background-color: white">
     <header>
       <h1>Lamesgin</h1>
 
       <!-- This button is used to add an icon in mobile mode to drag options and make it responsive. -->
-      <button>
-        <span></span>
-      </button>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
 
-      <nav>
+      <nav class="menues display-none">
         <div>
           <a href="home.html">Home</a>
           <a href="about.html">About</a>
@@ -28,79 +30,102 @@
     </header>
 
     <!-- Skill Start -->
-    <section>
+    <section class="skills-section">
       <div>
         <div>
-          <div>
-            <h1>My Skills</h1>
+          <div class="about-text">
+            <h2 class="about-text-absolute">MY SKILLS</h2>
+            <h2 class="background-text">SKILLS</h2>
           </div>
           <div>
             <div>
-              <div>
-                <div>
+              <div class="skills-wrapper">
+                <div class="skills-title">
                   <h6>HTML</h6>
                   <h6>95%</h6>
                 </div>
                 <!-- to show the progress chart -->
-                <div>
-                  <div></div>
+                <div class="skills-diagram-wrapper">
+                  <div style="width: 95%" class="skills-diagram"></div>
                 </div>
                 <!--  -->
               </div>
-              <div>
-                <div>
+              <div class="skills-wrapper">
+                <div class="skills-title">
                   <h6>CSS</h6>
-                  <h6>85%</h6>
-                </div>
-                <!-- to show the progres chart -->
-                <div>
-                  <div></div>
-                </div>
-                <!--  -->
-              </div>
-              <div>
-                <div>
-                  <h6>React</h6>
-                  <h6>90%</h6>
+                  <h6>80%</h6>
                 </div>
                 <!-- to show the progress chart -->
-                <div>
-                  <div></div>
+                <div class="skills-diagram-wrapper">
+                  <div style="width: 80%" class="skills-diagram"></div>
+                </div>
+                <!--  -->
+              </div>
+              <div class="skills-wrapper">
+                <div class="skills-title">
+                  <h6>JAVASCRIPT</h6>
+                  <h6>75%</h6>
+                </div>
+                <!-- to show the progress chart -->
+                <div class="skills-diagram-wrapper">
+                  <div style="width: 75%" class="skills-diagram"></div>
+                </div>
+                <!--  -->
+              </div>
+              <div class="skills-wrapper">
+                <div class="skills-title">
+                  <h6>PYTHON</h6>
+                  <h6>65%</h6>
+                </div>
+                <!-- to show the progress chart -->
+                <div class="skills-diagram-wrapper">
+                  <div style="width: 65%" class="skills-diagram"></div>
                 </div>
                 <!--  -->
               </div>
             </div>
             <div>
-              <div>
-                <div>
-                  <h6>Javascript</h6>
+              <div class="skills-wrapper">
+                <div class="skills-title">
+                  <h6>REACT</h6>
+                  <h6>65%</h6>
+                </div>
+                <!-- to show the progress chart -->
+                <div class="skills-diagram-wrapper">
+                  <div style="width: 65%" class="skills-diagram"></div>
+                </div>
+                <!--  -->
+              </div>
+              <div class="skills-wrapper">
+                <div class="skills-title">
+                  <h6>POSTGRESQL</h6>
                   <h6>90%</h6>
                 </div>
                 <!-- to show the progress chart -->
-                <div>
-                  <div></div>
+                <div class="skills-diagram-wrapper">
+                  <div style="width: 90%" class="skills-diagram"></div>
                 </div>
                 <!--  -->
               </div>
-              <div>
-                <div>
-                  <h6>Angular JS</h6>
-                  <h6>95%</h6>
+              <div class="skills-wrapper">
+                <div class="skills-title">
+                  <h6>BOOTSTRAP</h6>
+                  <h6>75%</h6>
                 </div>
                 <!-- to show the progress chart -->
-                <div>
-                  <div></div>
+                <div class="skills-diagram-wrapper">
+                  <div style="width: 75%" class="skills-diagram"></div>
                 </div>
                 <!--  -->
               </div>
-              <div>
-                <div>
-                  <h6>Wordpress</h6>
-                  <h6>85%</h6>
+              <div class="skills-wrapper">
+                <div class="skills-title">
+                  <h6>NODEJS</h6>
+                  <h6>90%</h6>
                 </div>
                 <!-- to show the progress chart -->
-                <div>
-                  <div></div>
+                <div class="skills-diagram-wrapper">
+                  <div style="width: 90%" class="skills-diagram"></div>
                 </div>
                 <!--  -->
               </div>
@@ -112,29 +137,8 @@
     <!-- Skill End -->
 
     <!-- Footer Start -->
-    <footer>
-      <div>
-        <div>
-          <div class="d-flex justify-content-center mb-4">
-            <!-- show social media icons -->
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-          </div>
-          <div>
-            <a href="#">Privacy</a>
-            <span>|</span>
-            <a href="#">Terms</a>
-            <span>|</span>
-            <a href="#">FAQs</a>
-            <span>|</span>
-            <a href="#">Help</a>
-          </div>
-        </div>
-      </div>
-    </footer>
 
     <!-- Footer End -->
+    <script src="./javascript/dom.js"></script>
   </body>
 </html>
