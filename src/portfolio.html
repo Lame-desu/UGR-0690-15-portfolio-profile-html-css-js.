@@ -4,17 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="portfolio-body">
     <header>
       <h1>Lamesgin</h1>
 
       <!-- This button is used to add an icon in mobile mode to drag options and make it responsive. -->
-      <button>
-        <span></span>
-      </button>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
 
-      <nav>
+      <nav class="menues display-none">
         <div>
           <a href="home.html">Home</a>
           <a href="about.html">About</a>
@@ -27,28 +34,23 @@
     </header>
 
     <!-- Portfolio Start -->
-    <section>
+    <section class="portfolio-section">
       <div>
         <div>
-          <div>
-            <h1>My Portfolio</h1>
+          <div class="about-text">
+            <h2 class="about-text-absolute" style="left: 26%">MY PORTFOLIO</h2>
+            <h2 class="background-text">GALLERY</h2>
           </div>
 
-          <div>
+          <div class="portfolio-images-container">
             <article>
               <div>
                 <div>
                   <div>
                     <figure>
-                      <h2>Apple website</h2>
                       <img src="images/portfolio-1.jpg" alt="" />
                     </figure>
                   </div>
-                  <div>
-                    <a href="images/portfolio-1.jpg">
-                      <i>Apple website</i>
-                    </a>
-                  </div>
                 </div>
               </div>
             </article>
@@ -57,14 +59,8 @@
                 <div>
                   <div>
                     <figure>
-                      <h2>Netflix website</h2>
                       <img src="images/portfolio-2.jpg" alt="" />
                     </figure>
-                  </div>
-                  <div>
-                    <a href="images/portfolio-2.jpg" data-lightbox="portfolio">
-                      <i>Netflix website</i>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -73,16 +69,10 @@
               <div>
                 <div>
                   <div>
-                    <h2>Amazone website</h2>
                     <figure>
                       <img src="images/portfolio-3.jpg" alt="" />
                     </figure>
                   </div>
-                  <div>
-                    <a href="images/portfolio-3.jpg" data-lightbox="portfolio">
-                      <i>Amazone website</i>
-                    </a>
-                  </div>
                 </div>
               </div>
             </article>
@@ -91,14 +81,8 @@
                 <div>
                   <div>
                     <figure>
-                      <h2>Evangadi forume</h2>
                       <img src="images/portfolio-4.jpg" alt="" />
                     </figure>
-                  </div>
-                  <div>
-                    <a href="images/portfolio-4.jpg" data-lightbox="portfolio">
-                      <i>Evangadi forume</i>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -107,16 +91,10 @@
               <div>
                 <div>
                   <div>
-                    <h2>Blog webstie</h2>
                     <figure>
                       <img src="images/portfolio-5.jpg" alt="" />
                     </figure>
                   </div>
-                  <div>
-                    <a href="images/portfolio-5.jpg" data-lightbox="portfolio">
-                      <i>blog website</i>
-                    </a>
-                  </div>
                 </div>
               </div>
             </article>
@@ -124,15 +102,9 @@
               <div>
                 <div>
                   <div>
-                    <h2>Netflix website</h2>
                     <figure>
                       <img src="images/portfolio-6.jpg" alt="" />
                     </figure>
-                  </div>
-                  <div>
-                    <a href="images/portfolio-6.jpg" data-lightbox="portfolio">
-                      <i>Netflix website</i>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -144,29 +116,7 @@
     <!-- Portfolio End -->
 
     <!-- Footer Start -->
-    <footer>
-      <div>
-        <div>
-          <div class="d-flex justify-content-center mb-4">
-            <!-- show social media icons -->
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-          </div>
-          <div>
-            <a href="#">Privacy</a>
-            <span>|</span>
-            <a href="#">Terms</a>
-            <span>|</span>
-            <a href="#">FAQs</a>
-            <span>|</span>
-            <a href="#">Help</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
     <!-- Footer End -->
+    <script src="./javascript/dom.js"></script>
   </body>
 </html>
