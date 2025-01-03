@@ -27,8 +27,9 @@ header {
 .menues {
   position: absolute;
   top: 100%;
+  right: 0px;
   padding: 20px;
-  width: 100%;
+  width: max-content;
   background-color: white;
 }
 
@@ -128,6 +129,7 @@ main {
 }
 
 .main-body-section h3 {
+  width: max-content;
   padding-top: 20px;
   font-size: 15px;
   font-style: normal;
@@ -136,6 +138,7 @@ main {
 }
 
 .main-body-section h2 {
+  width: max-content;
   padding-top: 20px;
   font-size: 30px;
   font-style: normal;
@@ -147,6 +150,7 @@ main {
 }
 
 .main-body-section p {
+  width: max-content;
   padding-top: 20px;
   font-size: 15px;
   font-style: normal;
@@ -157,7 +161,7 @@ main {
 .main-download {
   padding-top: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 30px;
   align-items: center;
 }
@@ -171,8 +175,12 @@ main {
   border-radius: 50px;
   border: 1px solid white;
 }
+.download-btn:hover{
+  background-color: white;
+  color: black;
+}
 
-.download-btn a {
+.download-btn {
   text-decoration: none;
   color: white;
 }
@@ -228,16 +236,33 @@ main {
   padding-top: 20px;
 }
 .about-btn {
+  color: white;
+  background-color: #02f7d0;
+}
+.about-btn:hover {
+  color: black;
+}
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 160px;
-  height: 40px;
   border-radius: 50px;
-  border: 1px solid #0bceaf;
-  color: #02f7d0;
   text-decoration: none;
+  width: max-content;
+  height: max-content;
+  padding: 10px 40px;
 }
+
+.hire-me-btn {
+  border: 2px solid #02f7d0;
+  color: black;
+}
+
+.hire-me-btn:hover {
+  background-color: #02f7d0;
+  color: white;
+}
+
 
 .about-btns {
   display: flex;
@@ -333,8 +358,13 @@ main {
 
 .contact-btn {
   background-color: white;
+  border: 2px solid #02f7d0;
 }
 
+.contact-btn:hover{
+  background-color: #02f7d0;
+  color: white;
+}
 .contact-section {
   padding-bottom: 30px;
 }
@@ -382,6 +412,9 @@ footer {
 .footer-privacy a:hover {
   text-decoration: underline;
   color: black;
+}
+.hire-me {
+  display: none;
 }
 
 @media (min-width: 480px) {
@@ -465,9 +498,7 @@ footer {
 
   .download-btn,
   .about-btn {
-    width: 260px;
-    height: 70px;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .video-icon {
@@ -562,3 +593,152 @@ footer {
     font-size: 25px;
   }
 }
+
+@media (min-width: 1024px) {
+  .hire-me {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+  .menues > a {
+    display: block;
+  }
+  .display-none {
+    display: block;
+  }
+  .menues {
+    position: static;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-body {
+    height: 80vh;
+    align-items: center;
+  }
+  .main-body-section {
+    padding-top: 80px;
+  }
+  .main-body-section h3 {
+    font-size: 35px;
+  }
+  .main-body-section p {
+    font-size: 25px;
+  }
+  .main-body-section h2 {
+    font-size: 50px;
+  }
+  .menues > div {
+    display: flex;
+    width: max-content;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .menues a {
+    font-size: 20px;
+  }
+  
+
+  .about-text-absolute {
+    left: 40%;
+  }
+  .home-main-container {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+  }
+  .about-body {
+    background-color: white;
+  }
+  .about-section {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 3%;
+  }
+  .about-lists {
+    grid-template-columns: auto auto;
+  }
+  .about-title {
+    font-size: 25px;
+  }
+  .about-description {
+    padding-top: 60px;
+  }
+  .about-section-container {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+  }
+  .skills-diagram-wrapper,
+  .skills-title {
+    width: 440px;
+  }
+  .skills-diagram,
+  .skills-diagram-wrapper {
+    height: 30px;
+  }
+
+  .video-icon {
+    width: 26px;
+    height: 36px;
+    padding: 18px 20px 20px 28px;
+  }
+  .video-icon span {
+    left: 1px;
+    border-left: 21px solid #0bceaf;
+    border-top: 16px solid transparent;
+    border-bottom: 17px solid transparent;
+  }
+
+  .view-video h5 {
+    font-size: 20px;
+    width: max-content;
+  }
+
+  .portfolio-images-container {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  header {
+    padding: 0px 30px;
+  }
+  header h1 {
+    font-size: 50px;
+  }
+  .menues a {
+    font-size: 20px;
+  }
+  .menues div {
+    gap: 40px;
+  }
+  a.hire-me {
+    font-size: 20px;
+  }
+  .main-body {
+    height: 80vh;
+    align-items: center;
+  }
+  .main-body-section h2 {
+    -webkit-text-stroke: 1.5px #dee2e6;
+  }
+  .skills-wrapper{
+    padding-bottom: 25px;
+  }
+  .portfolio-section img{
+    width: 350px;
+    height: 230px;
+  }
+
+  /* .profile-img {
+    width: 1100px;
+    height: 1100px;
+  }
+} */
