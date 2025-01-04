@@ -61,7 +61,9 @@ header {
   border-top: 11px solid transparent;
   border-bottom: 11px solid transparent;
 }
-
+.show-video {
+  display: none;
+}
 .view-video {
   display: flex;
   justify-content: center;
@@ -175,7 +177,7 @@ main {
   border-radius: 50px;
   border: 1px solid white;
 }
-.download-btn:hover{
+.download-btn:hover {
   background-color: white;
   color: black;
 }
@@ -215,6 +217,7 @@ main {
 }
 
 .about-description {
+  position: relative;
   width: 85%;
   margin: 0 auto;
   display: flex;
@@ -262,7 +265,6 @@ main {
   background-color: #02f7d0;
   color: white;
 }
-
 
 .about-btns {
   display: flex;
@@ -361,7 +363,7 @@ main {
   border: 2px solid #02f7d0;
 }
 
-.contact-btn:hover{
+.contact-btn:hover {
   background-color: #02f7d0;
   color: white;
 }
@@ -375,7 +377,11 @@ main {
   outline: none;
   box-shadow: 1px 1px 5px -1px #02f7d0;
 }
-
+#learn-more {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
 footer {
   background-color: #02f7d0;
   padding: 20px;
@@ -412,6 +418,135 @@ footer {
 .footer-privacy a:hover {
   text-decoration: underline;
   color: black;
+}
+.more-about {
+  padding: 20px;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 500; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: white; /* Fallback color */
+}
+.close {
+  color: #aaa;
+  float: right;
+  margin-right: 40px;
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hobbies-container {
+  background-color: #f9f9f9;
+  border: 2px solid #02f7d0;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+.hobbies-title {
+  color: #02f7d0;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.hobbies-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hobby-item {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.hobby-name {
+  margin: 5px 0;
+  color: #02c7a3;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hobby-description {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.hobby-audio {
+  margin-top: 8px;
+  outline: none;
+  border: 1px solid #02f7d0;
+  border-radius: 8px;
+}
+
+.hobby-audio::-webkit-media-controls-panel {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.hobby-item:hover {
+  background-color: #e6fffa;
+  border-left: 4px solid #02f7d0;
+  padding-left: 8px;
+  transition: 0.3s ease;
+}
+.schedule-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.schedule-table {
+  width: 80%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.my-schedule h2 {
+  text-align: center;
+}
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.schedule-table th {
+  background-color: #02f7d0;
+  color: white;
+  font-weight: bold;
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.schedule-table tr:hover {
+  background-color: #f1f1f1;
 }
 .hire-me {
   display: none;
@@ -643,7 +778,6 @@ footer {
   .menues a {
     font-size: 20px;
   }
-  
 
   .about-text-absolute {
     left: 40%;
@@ -729,16 +863,11 @@ footer {
   .main-body-section h2 {
     -webkit-text-stroke: 1.5px #dee2e6;
   }
-  .skills-wrapper{
+  .skills-wrapper {
     padding-bottom: 25px;
   }
-  .portfolio-section img{
+  .portfolio-section img {
     width: 350px;
     height: 230px;
   }
-
-  /* .profile-img {
-    width: 1100px;
-    height: 1100px;
-  }
-} */
+}
