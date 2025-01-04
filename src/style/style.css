@@ -130,7 +130,7 @@ main {
   font-family: Roboto;
 }
 
-.main-body-section h3 {
+.main-body-section p {
   width: max-content;
   padding-top: 20px;
   font-size: 15px;
@@ -560,7 +560,7 @@ footer {
   .main-body-section h2 {
     font-size: 40px;
   }
-  .main-body-section h3 {
+  .main-body-section p {
     font-size: 25px;
   }
   .main-body-section p {
@@ -624,7 +624,7 @@ footer {
   .main-body-section h2 {
     font-size: 70px;
   }
-  .main-body-section h3 {
+  .main-body-section p {
     font-size: 45px;
   }
   .main-body-section p {
@@ -648,7 +648,7 @@ footer {
     border-bottom: 21px solid transparent;
   }
 
-  .view-video h5 {
+  .view-video p {
     font-size: 25px;
     padding-left: 10px;
   }
@@ -760,7 +760,7 @@ footer {
   .main-body-section {
     padding-top: 80px;
   }
-  .main-body-section h3 {
+  .main-body-section p {
     font-size: 35px;
   }
   .main-body-section p {
@@ -830,7 +830,7 @@ footer {
     border-bottom: 17px solid transparent;
   }
 
-  .view-video h5 {
+  .view-video p {
     font-size: 20px;
     width: max-content;
   }
